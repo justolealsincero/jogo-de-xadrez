@@ -8,19 +8,83 @@
 </head>
 <body>
   <div class="chess-board">
-    <!-- Criar as 64 casas -->
-    <!-- 8x8 tabuleiro -->
-    <!-- Linhas pares começam com branco, ímpares com preto -->
-    <script>
-      const board = document.querySelector('.chess-board');
-      for (let i = 0; i < 64; i++) {
-        const square = document.createElement('div');
-        const row = Math.floor(i / 8);
-        const isEven = (row % 2 === 0) ? i % 2 === 0 : i % 2 !== 0;
-        square.className = 'square ' + (isEven ? 'white' : 'black');
-        board.appendChild(square);
-      }
-    </script>
+    <!-- As 64 casas do tabuleiro com as peças iniciais -->
+    <!-- Linha 8 - Peças pretas -->
+    <div class="square black">♜</div>
+    <div class="square white">♞</div>
+    <div class="square black">♝</div>
+    <div class="square white">♛</div>
+    <div class="square black">♚</div>
+    <div class="square white">♝</div>
+    <div class="square black">♞</div>
+    <div class="square white">♜</div>
+
+    <!-- Linha 7 - Peões pretos -->
+    <div class="square white">♟︎</div>
+    <div class="square black">♟︎</div>
+    <div class="square white">♟︎</div>
+    <div class="square black">♟︎</div>
+    <div class="square white">♟︎</div>
+    <div class="square black">♟︎</div>
+    <div class="square white">♟︎</div>
+    <div class="square black">♟︎</div>
+
+    <!-- Linhas 6 a 3 - vazias -->
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+    <div class="square white"></div>
+    <div class="square black"></div>
+
+    <!-- Linha 2 - Peões brancos -->
+    <div class="square black">♙</div>
+    <div class="square white">♙</div>
+    <div class="square black">♙</div>
+    <div class="square white">♙</div>
+    <div class="square black">♙</div>
+    <div class="square white">♙</div>
+    <div class="square black">♙</div>
+    <div class="square white">♙</div>
+
+    <!-- Linha 1 - Peças brancas -->
+    <div class="square white">♖</div>
+    <div class="square black">♘</div>
+    <div class="square white">♗</div>
+    <div class="square black">♕</div>
+    <div class="square white">♔</div>
+    <div class="square black">♗</div>
+    <div class="square white">♘</div>
+    <div class="square black">♖</div>
   </div>
 </body>
 </html>
