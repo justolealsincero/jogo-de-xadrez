@@ -5,6 +5,8 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
 }
 
 .chess-board {
@@ -17,6 +19,9 @@ body {
 .square {
   width: 60px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .white {
@@ -25,4 +30,5 @@ body {
 
 .black {
   background-color: #444;
+  color: white;
 }
