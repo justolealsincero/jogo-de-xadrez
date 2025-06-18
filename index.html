@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Xadrez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chess-board">
+    <!-- Criar as 64 casas -->
+    <!-- 8x8 tabuleiro -->
+    <!-- Linhas pares começam com branco, ímpares com preto -->
+    <script>
+      const board = document.querySelector('.chess-board');
+      for (let i = 0; i < 64; i++) {
+        const square = document.createElement('div');
+        const row = Math.floor(i / 8);
+        const isEven = (row % 2 === 0) ? i % 2 === 0 : i % 2 !== 0;
+        square.className = 'square ' + (isEven ? 'white' : 'black');
+        board.appendChild(square);
+      }
+    </script>
+  </div>
+</body>
+</html>
